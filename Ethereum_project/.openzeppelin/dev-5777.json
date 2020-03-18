@@ -1,0 +1,117 @@
+{
+  "contracts": {
+    "Xtoken": {
+      "address": "0xf3BC67FD9d3e6cF9F1f034f199b7c388e36D7B76",
+      "constructorCode": "608060405234801561001057600080fd5b50610f78806100206000396000f3fe",
+      "bodyBytecodeHash": "1ae29be8c34f2c4ba9755bc55b1b50333cf2ad584f59e0fcbd45652ec582cc9e",
+      "localBytecodeHash": "9c2ce350358656d5838f7008cb1c83df7ea1d86c17309a660f70176a67b59142",
+      "deployedBytecodeHash": "9c2ce350358656d5838f7008cb1c83df7ea1d86c17309a660f70176a67b59142",
+      "types": {
+        "t_string": {
+          "id": "t_string",
+          "kind": "elementary",
+          "label": "string"
+        },
+        "t_uint8": {
+          "id": "t_uint8",
+          "kind": "elementary",
+          "label": "uint8"
+        },
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        },
+        "t_mapping<t_uint256>": {
+          "id": "t_mapping<t_uint256>",
+          "valueType": "t_uint256",
+          "label": "mapping(key => uint256)",
+          "kind": "mapping"
+        }
+      },
+      "storage": [
+        {
+          "contract": "Xtoken",
+          "path": "contracts/XToken.sol",
+          "label": "name",
+          "astId": 201,
+          "type": "t_string",
+          "src": "2397:18:0"
+        },
+        {
+          "contract": "Xtoken",
+          "path": "contracts/XToken.sol",
+          "label": "decimals",
+          "astId": 203,
+          "type": "t_uint8",
+          "src": "2441:21:0"
+        },
+        {
+          "contract": "Xtoken",
+          "path": "contracts/XToken.sol",
+          "label": "symbol",
+          "astId": 205,
+          "type": "t_string",
+          "src": "2485:20:0"
+        },
+        {
+          "contract": "Xtoken",
+          "path": "contracts/XToken.sol",
+          "label": "_totalSupply",
+          "astId": 207,
+          "type": "t_uint256",
+          "src": "2522:21:0"
+        },
+        {
+          "contract": "Xtoken",
+          "path": "contracts/XToken.sol",
+          "label": "_balances",
+          "astId": 211,
+          "type": "t_mapping<t_uint256>",
+          "src": "2552:39:0"
+        },
+        {
+          "contract": "Xtoken",
+          "path": "contracts/XToken.sol",
+          "label": "_allowed",
+          "astId": 217,
+          "type": "t_mapping<t_uint256>",
+          "src": "2600:59:0"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": [],
+        "storageUncheckedVars": [],
+        "storageDiff": []
+      }
+    }
+  },
+  "solidityLibs": {},
+  "proxies": {
+    "api/Xtoken": [
+      {
+        "address": "0x030367aeCb36b0fd75ffBbAb22d35d8de0246eF0",
+        "version": "1.0.0",
+        "implementation": "0xf3BC67FD9d3e6cF9F1f034f199b7c388e36D7B76",
+        "admin": "0x3c845A5BC6A073fEa89d615ACe51AdEc6D41Bbd9",
+        "kind": "Upgradeable"
+      },
+      {
+        "address": "0x3c845A5BC6A073fEa89d615ACe51AdEc6D41Bbd9",
+        "version": "1.0.0",
+        "implementation": "0xf3BC67FD9d3e6cF9F1f034f199b7c388e36D7B76",
+        "admin": "0x3c845A5BC6A073fEa89d615ACe51AdEc6D41Bbd9",
+        "kind": "Upgradeable"
+      }
+    ]
+  },
+  "manifestVersion": "2.2",
+  "version": "1.0.0",
+  "proxyAdmin": {
+    "address": "0x3c845A5BC6A073fEa89d615ACe51AdEc6D41Bbd9"
+  }
+}
